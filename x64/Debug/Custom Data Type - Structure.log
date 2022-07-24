@@ -1,0 +1,6 @@
+﻿  new learning.c
+F:\global vs codes\Custom Data Type - Structure\new learning.c(50,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+F:\global vs codes\Custom Data Type - Structure\new learning.c(50,9): message : 请考虑在格式字符串中使用“%zd”
+F:\global vs codes\Custom Data Type - Structure\new learning.c(51,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+F:\global vs codes\Custom Data Type - Structure\new learning.c(51,9): message : 请考虑在格式字符串中使用“%zd”
+  Custom Data Type - Structure.vcxproj -> F:\global vs codes\Custom Data Type - Structure\x64\Debug\Custom Data Type - Structure.exe
