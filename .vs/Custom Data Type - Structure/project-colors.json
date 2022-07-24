@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "1c4795e7-d914-4925-906d-d65573503ffd": {
+      "ProjectGuid": "1c4795e7-d914-4925-906d-d65573503ffd",
+      "DisplayName": "Custom Data Type - Structure",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
