@@ -31,25 +31,38 @@
 
 
 //结构体内存对齐问题。
-struct stu
-{
-	char a;
-	int b;
-	char c;
-};
+//struct stu
+//{
+//	char a;
+//	int b;
+//	char c;
+//};
+//
+//struct teach
+//{
+//	char a;
+//	char c;
+//	int b;
+//};
+//
+//int main()
+//{
+//	struct stu S = { 0 };
+//	struct teach T = { 0 };
+//	printf("%d\n", sizeof(S));
+//	printf("%d\n", sizeof(T));
+//	return 0;
+//}
 
-struct teach
+struct S
 {
-	char a;
-	char c;
-	int b;
+	double a;
+	char b;
+	int c;
 };
 
 int main()
 {
-	struct stu S = { 0 };
-	struct teach T = { 0 };
-	printf("%d\n", sizeof(S));
-	printf("%d\n", sizeof(T));
+	printf("%d\n", sizeof(struct S));
 	return 0;
 }
