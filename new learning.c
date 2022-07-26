@@ -54,15 +54,52 @@
 //	return 0;
 //}
 
-struct S
-{
-	double a;
-	char b;
-	int c;
-};
+//struct S
+//{
+//	double a;
+//	char b;
+//	int c;
+//};
+//
+//int main()
+//{
+//	printf("%d\n", sizeof(struct S));
+//	return 0;
+//}
 
-int main()
+
+
+typedef struct Stu
 {
-	printf("%d\n", sizeof(struct S));
-	return 0;
-}
+	char name[20];
+	char sex[10];
+	char tele[12];
+	int age;
+}S;
+//传递数组
+//void print(S s)
+//{
+//	printf("%s\n", s.sex);
+//}
+//
+//int main()
+//{
+//	S s = { "骚冰","男","15384356698",70 };
+//	print(s);
+//	return 0;
+//}
+
+//指针传参
+//void print(S* s)
+//{
+//	printf("%s\n", s->tele);
+//	return 0;
+//}
+//
+//int main()
+//{
+//	S s1 = { "食屎","娚","15384356684",68 };
+//	print(&s1);
+//	return 0;
+//}
+
