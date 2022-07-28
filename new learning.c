@@ -103,3 +103,35 @@ typedef struct Stu
 //	return 0;
 //}
 
+//struct S
+//{
+//	int _a : 5;
+//	int _b : 6;
+//	int _c : 15;
+//	int _d : 6;
+//};
+//
+//int main()
+//{
+//	struct S s;
+//	printf("%d\n", sizeof(s));
+//	return 0;
+//}
+
+struct S
+{
+	char a : 3;
+	char b : 4;
+	char c : 5;
+	char d : 4;
+};
+
+int main()
+{
+	struct S s;
+	s.a = 10;
+	s.b = 20;
+	s.c = 3;
+	s.d = 4;
+	return 0;
+}
