@@ -118,20 +118,50 @@ typedef struct Stu
 //	return 0;
 //}
 
-struct S
+//struct S
+//{
+//	char a : 3;
+//	char b : 4;
+//	char c : 5;
+//	char d : 4;
+//};
+//
+//int main()
+//{
+//	struct S s;
+//	s.a = 10;
+//	s.b = 20;
+//	s.c = 3;
+//	s.d = 4;
+//	return 0;
+//}
+
+
+
+//枚举
+enum Day
 {
-	char a : 3;
-	char b : 4;
-	char c : 5;
-	char d : 4;
+	Mon,
+	Tues,
+	Wed,
+	Thur,
+	Fri,
+	Sat,
+	Sum
+};
+
+enum Sex
+{
+	//枚举的可能取值
+	Male,
+	Female,
+	Secret
 };
 
 int main()
 {
-	struct S s;
-	s.a = 10;
-	s.b = 20;
-	s.c = 3;
-	s.d = 4;
+	enum Day s = Mon;
+	enum Sex x = Male;
 	return 0;
 }
+
