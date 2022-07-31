@@ -139,29 +139,85 @@ typedef struct Stu
 
 
 //枚举
-enum Day
-{
-	Mon,
-	Tues,
-	Wed,
-	Thur,
-	Fri,
-	Sat,
-	Sum
-};
+//enum Day
+//{
+//	Mon,
+//	Tues,
+//	Wed,
+//	Thur,
+//	Fri,
+//	Sat,
+//	Sum
+//};
+//
+//enum Sex
+//{
+//	//枚举的可能取值
+//	Male,
+//	Female,
+//	Secret
+//};
+//
+//int main()
+//{
+//	enum Day s = Mon;
+//	enum Sex x = Male;
+//	return 0;
+//}
 
-enum Sex
+//enum Color
+//{
+//	RED = 1,
+//	GREEN=2,
+//	BLUE=4
+//};
+//
+//int main()
+//{
+//	enum Color clr = GREEN;
+//	clr = 5;
+//	printf("%d\n", clr);
+//	return 0;
+//}//虽然C源代码里面能运行，但是改成更严谨的C++就会提示出错，和#define定义的宏常量一样，enum中的常量也相当于被const修饰的，常量无法更改；
+
+
+
+
+//判断当前计算机的大小端存储问题
+
+int check_sys()
 {
-	//枚举的可能取值
-	Male,
-	Female,
-	Secret
-};
+	union Un
+	{
+		char c;
+		int a;
+	}u;
+	u.a = 1;
+	return u.c;
+}
 
 int main()
 {
-	enum Day s = Mon;
-	enum Sex x = Male;
+	int a = 1;
+	//如果是小端存储那么 01 00 00 00，那么取地址强制转换字节解引用，那么输出的是1，如果大端，那么是0
+	//平时的写法
+	//if (1 == *(char*)&a)
+	//{
+	//	printf("机器是小端存储\n");
+	//}
+	//else
+	//{
+	//	printf("机器是大端存储\n");
+	//}
+	//联合体写法
+	int ret = check_sys();
+	if (1 == *(char*)&a)
+    {
+	    printf("机器是小端存储\n");
+    }
+    else
+    {
+	    printf("机器是大端存储\n");
+    }
 	return 0;
 }
-
